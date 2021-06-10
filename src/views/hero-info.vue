@@ -56,7 +56,7 @@ import HeroChart from '../components/charts/hero-chart.vue'
       changeInputValue:async function(event){
         try{
           this.busy=true
-          const response = await this.$http.get(`http://192.168.1.15:4000/hero/${event}`)
+          const response = await this.$http.get(`http://localgost:4000/hero/${event}`)
           
           var data = {}
           data.totRanks = response.data.map(res=>res.tot_rank*1)

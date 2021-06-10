@@ -58,7 +58,7 @@ export default {
     changeSelected: async function(value,template){
       try{
         if(value.length>0){
-          const response = await this.$http.get(`http://192.168.1.15:4000/server/${value}`)
+          const response = await this.$http.get(`http://localhost:4000/server/${value}`)
           var data = {
             labels:response.data.map(item=>item.combat_power+'만이상'),
             data:response.data.map(item=>item.count)
