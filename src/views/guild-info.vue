@@ -52,7 +52,7 @@ import Guildtemplate from '../components/guild-template.vue'
           }else if(template==='right'){
             this.rightBusy=true
           }
-          const response = await this.$http.get(`http://localhost:4000/guild/${value}`)
+          const response = await this.$http.get(`http://152.70.253.149:3001/guild/${value}`)
           var info = response.data[0]
 
           if(template==='left'){

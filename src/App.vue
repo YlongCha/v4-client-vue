@@ -4,7 +4,7 @@
     <router-view></router-view>
   </div>
 </template>
-
+<script src="./vue.js"></script>
 <script>
 import SideBar from './components/layout/side-bar'
   export default {
@@ -15,14 +15,14 @@ import SideBar from './components/layout/side-bar'
   }
 </script>
 
-<style lang="stylus">
+<style>
 * { padding: 0; margin: 0; }
 html, body{
   min-height: 100% !important;
   height: 100%;
 }
 #app{
-  height :100%
+  height :100%;
   display :grid;
   background-color:#f6f6f6;
 }
