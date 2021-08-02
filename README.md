@@ -14,11 +14,15 @@ npm run serve
 ```
 npm run build
 ```
+## 모바일게임 v4순위 검색 사이트입니다.
+### 1.디렉토리
+	1. public : build된 파일을 export.
+	2. src : 소스파일 
+    1. assets : 이미지 등 파일
+    2. component : view에 사용되는 컴포넌트 파일
+      - charts : 사용되는 chart를 미리 정의해놓음
+      - layout : 화면 레이아웃에 사용되는 파일들(side-bar, footer 등...)
+      - xxx-template : 화면 별 반복사용되는 컴포넌트 들
+    3. router : 페이지별 route 정의
+    4. views : 실제 보여지는 페이지 파일
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
